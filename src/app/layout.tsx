@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layouts/header";
+import { Footer } from "@/components/layouts/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const work_sans = Work_Sans({ subsets: ["latin"] });
@@ -19,10 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${work_sans.className} antialiased`}>
       <body className="bg-[#eafaf1]">
-        <section className="md:container mx-auto ">
+        <div className="flex h-screen flex-col justify-between">
           <Header />
           <main>{children}</main>
-        </section>
+          <Footer />
+        </div>
       </body>
     </html>
   );

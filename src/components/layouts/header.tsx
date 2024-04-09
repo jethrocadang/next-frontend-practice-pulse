@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <div className=" w-full flex justify-between py-4 px-4">
+    <div className=" w-full flex justify-between py-4 px-4 ">
       <Link href={"/"}>
         <Image
           src={"/pulse-logo.svg"}
@@ -15,7 +15,7 @@ export const Header = () => {
           width={100}
         />
       </Link>
-      <div className=" space-x-3 flex items-center">
+      <div className=" hidden lg:flex md:flex space-x-3  items-center">
         <Link
           href={""}
           className="font-semibold text-sm text-[#00ad6a] hover:text-black"
@@ -43,6 +43,10 @@ export const Header = () => {
         <Button variant="outline" size="sm" className="">
           Sign Up
         </Button>
+      </div>
+      <div className="lg:hidden md:hidden">
+        {/**TODO ADD TOGGLE FOR MOBILE  */}
+        X
       </div>
     </div>
   );
