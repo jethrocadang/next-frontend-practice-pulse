@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <div className=" w-full flex justify-between py-4 px-4 ">
+    <div className="container w-full flex justify-between py-4 px-4 bg-white border border-b-[#d6dae5] md:bg-green-light md:border-none ">
       <Link href={"/"}>
         <Image
           src={"/pulse-logo.svg"}

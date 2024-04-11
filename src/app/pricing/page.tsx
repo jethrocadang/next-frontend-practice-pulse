@@ -14,10 +14,12 @@ export default function Pricing() {
           <PricingCards />
         </div>
         <div className="container">
-          <CatchPhrase/>
+          <CatchPhrase />
         </div>
-        <div className="container bg-white py-5">
-          <FAQs/>
+        <div className="bg-white">
+          <div className="container py-5">
+            <FAQs />
+          </div>
         </div>
       </div>
     </main>
