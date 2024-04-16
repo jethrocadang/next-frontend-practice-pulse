@@ -12,17 +12,17 @@ import { Check } from "lucide-react";
 
 export const PricingCards = () => {
   return (
-    <div className="flex lg:items-center lg:flex-row lg:p-5  flex-col space-y-5">
-      <Card className="flex-1 ">
-        <CardHeader className="px-0">
-          <CardTitle className="text-green-dark font-bold">
+    <div className="flex lg:items-center lg:flex-row lg:p-5 flex-col space-y-8 tracking-tight">
+      <Card className="flex-1  ">
+        <CardHeader className="p-0">
+          <CardTitle className="text-green-dark font-bold text-xl leading-tight mb-4">
             These are what we call the Pulse Basics. They&apos;re what every
             customer gets.
           </CardTitle>
         </CardHeader>
         <CardContent>
           <CardDescription>
-            <ul className="list-disc pl-5">
+            <ul className="list-disc text-base text-main-dark/80">
               <li>
                 Manage cash flow on a daily, weekly, monthly, or yearly basis
               </li>
@@ -42,21 +42,21 @@ export const PricingCards = () => {
             </ul>
           </CardDescription>
         </CardContent>
-        <p className="px-0">
+        <p className="px-0 text-main-dark/80">
           Just need the Pulse Basics? <br /> <span>Get them now</span> for $29
           per month.
         </p>
       </Card>
 
-      <Card variant="outline" className="flex-1 text-left rounded-t-lg group">
-        <CardBanner className="text-white bg-green-dark font-semibold text-sm">
-          RECOMENDED
+      <Card variant="outline" className="flex-1 text-left rounded-t-lg group tracking-tight">
+        <CardBanner className="text-white bg-green-dark font-bold text-xs py-2 tracking-wider">
+          RECOMMENDED
         </CardBanner>
-        <CardHeader>
-          <CardTitle className="text-green-dark font-bold text-3xl text-left lg:text-center lg:text-5xl lg:mx-24  lg:tracking-tighter">
+        <CardHeader className="p-5">
+          <CardTitle className="text-green-dark font-bold text-4xl text-left tracking-tight lg:text-center lg:text-5xl lg:mx-24  lg:tracking-tighter">
             Small Business Plan
           </CardTitle>
-          <CardContent className="text-left px-1 py-0 text-lg lg:text-center lg:pb-7">
+          <CardContent className="text-left px-1 py-0 text-xl lg:text-center lg:pb-7 text-main-gray/70">
             <p>$59 per month</p>
           </CardContent>
           <div className="hidden lg:flex lg:justify-center">
@@ -65,10 +65,10 @@ export const PricingCards = () => {
             </Button>
           </div>
         </CardHeader>
-        <CardDescription className="p-5 space-y-4">
-          <ul className="space-y-5 tracking-widest">
+        <CardDescription className="p-5 pt-2 space-y-4">
+          <ul className="space-y-5 text-base leading-tight *:text-main-dark/80 *:hover:text-main-dark">
             <li className="lg:text-center">
-              <h3 className=" font-semibold">YOU GET PULSE BASICS, PLUS:</h3>
+              <h3 className=" font-semibold text-xs tracking-widest">YOU GET PULSE BASICS, PLUS:</h3>
             </li>
             <li className="flex gap-1">
               <Check size={15} className="font-bold text-green-dark" />
@@ -93,7 +93,7 @@ export const PricingCards = () => {
                 Track your actual cash flow alongside your projected cash flow
               </p>
             </li>
-            <Button className="font-bold text-main-dark opacity-90 w-full lg:hidden">
+            <Button className="font-bold p-6 text-lg text-main-dark opacity-90 w-full lg:hidden hover:translate-x-0 hover:translate-y-0">
               Sign Up Now
             </Button>
           </ul>
@@ -104,16 +104,16 @@ export const PricingCards = () => {
         variant="outline"
         className="flex-1 text-left border-slate-[#F2F3F3] group"
       >
-        <CardBanner className="text-main-dark bg-[#F2F3F3]  text-sm p-5 lg:text-center lg:px-10 lg:text-md lg:tracking-wide">
+        <CardBanner className="text-main-dark/80 bg-[#F2F3F3]  text-sm p-5 text-center lg:px-10 lg:text-md tracking-wide">
           Complex business with multiple financial accounts, currencies, or
           auditing needs?
         </CardBanner>
-        <CardHeader>
-          <CardTitle className="text-green-dark text-xl font-normal lg:text-4xl lg:text-center lg:mx-16">
+        <CardHeader className="pt-3">
+          <CardTitle className="text-green-dark font-normal tracking-tighter text-4xl lg:text-center lg:mx-16">
             Unlock Extra Features
           </CardTitle>
-          <CardContent className="p-0  lg:pb-7">
-            <p className="text-lg lg:text-center">$89 per month</p>
+          <CardContent className="p-0  lg:pb-5">
+            <p className="text-xl text-main-dark/60 lg:text-center">$89 per month</p>
           </CardContent>
           <div className="hidden lg:flex lg:justify-center lg:items-center lg:group-hover:">
             <Button className="hidden font-bold text-main-dark opacity-90 lg:flex lg:justify-center lg:tracking-wide lg:text-xl lg:p-5 lg:px-7 lg:group-hover:scale-110 transition">
@@ -121,10 +121,10 @@ export const PricingCards = () => {
             </Button>
           </div>
         </CardHeader>
-        <CardDescription className="p-5">
-          <ul className="space-y-5">
+        <CardDescription className="p-5 pt-2">
+          <ul className="space-y-3 *:text-main-dark/80 *:hover:text-main-dark text-base">
             <li>
-              <h3 className="font-bold tracking-widest lg:text-center">
+              <h3 className="font-bold text-xs tracking-widest lg:text-center">
                 GET IT ALL, PLUS:
               </h3>
             </li>
@@ -146,7 +146,7 @@ export const PricingCards = () => {
                 accountability and auditing
               </p>
             </li>
-            <Button className="w-full font-bold text-main-dark opacity-90 lg:hidden">
+            <Button className="w-full p-6 text-lg   font-bold text-main-dark opacity-90  hover:translate-x-0 hover:translate-y-0 lg:hidden">
               Try Premium
             </Button>
           </ul>

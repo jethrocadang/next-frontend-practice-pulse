@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <div className="container w-full flex justify-between py-4 px-4 bg-white border border-b-[#d6dae5] md:bg-green-light md:border-none ">
+    <nav className="container w-full flex justify-between py-5 px-4  bg-white border border-b-[#d6dae5] md:bg-green-light md:border-none md:py-12 md:px-8">
       <Link href={"/"}>
         <Image
           src={"/pulse-logo.svg"}
@@ -40,14 +40,19 @@ export const Header = () => {
         >
           Blog
         </Link>
-        <Button variant="outline" size="sm" className="">
-          Sign Up
-        </Button>
+        <div className="bg-green-dark">
+          <Button
+            variant="outline"
+            size="sm"
+            className="text-green-dark font-bold"
+          >
+            Sign Up
+          </Button>
+        </div>
       </div>
       <div className="lg:hidden md:hidden">
-        {/**TODO ADD TOGGLE FOR MOBILE  */}
-        X
+        {/**TODO ADD TOGGLE FOR MOBILE  */}X
       </div>
-    </div>
+    </nav>
   );
 };

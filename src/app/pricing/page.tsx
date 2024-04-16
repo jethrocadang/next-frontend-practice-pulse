@@ -16,7 +16,7 @@ export default function Pricing() {
         <div className="container">
           <CatchPhrase />
         </div>
-        <div className="bg-white">
+        <div className="bg-white border-t border-main-light">
           <div className="container py-5">
             <FAQs />
           </div>
