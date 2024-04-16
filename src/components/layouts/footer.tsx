@@ -6,7 +6,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <footer>
-      <div className=" bg-main-dark flex flex-col justify-center py-5  space-y-5 md:py-24">
+      <div className=" bg-main-dark flex flex-col justify-center pt-24 pb-5">
         <div className="container">
           <div className="lg:flex">
             <div className="flex flex-col items-center p-5 space-y-5 lg:w-1/2 lg:items-start lg:p-0">
@@ -17,7 +17,7 @@ export const Footer = () => {
                 </Button>
               </div>
             </div>
-            <div className="flex flex-wrap px-5 lg:w-1/2 text-md">
+            <div className="flex flex-wrap px-5 lg:w-1/2 text-md mb-12">
               <ul className="w-1/3 lg:space-y-4">
                 <li>
                   <h3 className="font-bold text-white">Products</h3>
@@ -81,8 +81,8 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container p-5 md:pb-0">
-          <p className="text-[#83858a] text-xs pb-7 md:pb-0">
+        <div className="container p-5 pb-0">
+          <p className="text-[#83858a] text-xs  md:pb-0">
             &copy;2019 Pulseapp.com, Inc. Allrights Reserved | Terms of
             Condition | Privacy Policy | EU Privacy
             <br />

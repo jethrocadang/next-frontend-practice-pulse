@@ -11,8 +11,8 @@ export const Header = () => {
         <Image
           src={"/pulse-logo.svg"}
           alt="pulse-log"
-          height={100}
-          width={100}
+          height={110}
+          width={120}
         />
       </Link>
       <div className=" hidden lg:flex md:flex space-x-3  items-center">
